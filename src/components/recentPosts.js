@@ -10,11 +10,11 @@ import Post from './post';
 
 class RecentPosts extends Component {
 
-    componentDidMount() {
-        this.props.fetchRecentPosts();
-    }
+  componentDidMount() {
+    this.props.fetchRecentPosts();
+  }
 
-    renderPosts = function() {
+  renderPosts = function() {
         const posts = this.props.recentPosts.map((post, index) => {
             if(index < 3) {
                 return (
